@@ -1,0 +1,12 @@
+digraph G {
+"base_link" -> "base_laser_link"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 553.900 ( 0.000 sec old)\nBuffer length: 4.900 sec\n"];
+"base_footprint" -> "base_link"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 553.900 ( 0.000 sec old)\nBuffer length: 4.900 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /stageros\nAverage rate: 10.204 Hz\nMost recent transform: 553.900 ( 0.000 sec old)\nBuffer length: 4.900 sec\n"];
+"map" -> "odom"[label="Broadcaster: /hector_mapping\nAverage rate: 4.898 Hz\nMost recent transform: 551.200 ( 2.700 sec old)\nBuffer length: 4.900 sec\n"];
+"base_link" -> "laser"[label="Broadcaster: /base_to_laser_broadcaster\nAverage rate: 10.204 Hz\nMost recent transform: 554.000 ( -0.100 sec old)\nBuffer length: 4.900 sec\n"];
+"map" -> "scanmatcher_frame"[label="Broadcaster: /hector_mapping\nAverage rate: 4.898 Hz\nMost recent transform: 551.200 ( 2.700 sec old)\nBuffer length: 4.900 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 553.900"[ shape=plaintext ] ;
+ }->"map";
+}
