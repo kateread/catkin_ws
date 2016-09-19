@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kates_controllers")
+set(kates_controllers_MAINTAINER "kate <kate@todo.todo>")
+set(kates_controllers_DEPRECATED "")
+set(kates_controllers_VERSION "0.0.0")
+set(kates_controllers_BUILD_DEPENDS "roscpp" "rospy" "geometry_msgs" "sensor_msgs" "std_msgs")
+set(kates_controllers_RUN_DEPENDS "geometry_msgs" "sensor_msgs" "roscpp" "rospy" "std_msgs")
+set(kates_controllers_BUILDTOOL_DEPENDS "catkin")

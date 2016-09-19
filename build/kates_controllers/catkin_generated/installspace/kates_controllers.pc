@@ -1,0 +1,8 @@
+prefix=/home/kate/catkin_ws/install
+
+Name: kates_controllers
+Description: Description of kates_controllers
+Version: 0.0.0
+Cflags: -I/home/kate/catkin_ws/install/include
+Libs: -L/home/kate/catkin_ws/install/lib -lkates_controllers
+Requires: roscpp rospy std_msgs
